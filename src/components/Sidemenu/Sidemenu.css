@@ -1,0 +1,73 @@
+.sidemenu {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+
+.sidemenu img {
+    width: 20px;
+}
+
+.sidemenu .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidemenu .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+.sidemenu .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.sidemenu .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidemenu .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #282828;
+    cursor: pointer;
+}
+
+.sidemenu .recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.sidemenu .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidemenu .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .sidemenu {
+        display: none;
+    }
+}
